@@ -1,3 +1,3 @@
 # Dietolog
-##### homepage - 
+##### homepage - https://saynschuman.github.io/dist/index.html
 
