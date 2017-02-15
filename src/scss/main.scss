@@ -1,2 +1,109 @@
 @import 'includes/_var';
 @import 'includes/_fonts';
+
+body {
+	font-family: OpenSansRegular;
+	background-color: $blue;
+}
+
+header {
+	color: $fontLight;
+	width: 260px;
+	position: fixed;
+	.ava {
+		height: 80px;
+		width: 80px;
+		background-position: -39px -26px;
+		border-radius: 100%;
+		border: 1px solid $fontLight; 
+		display: block; 
+		margin: 0 auto;
+		margin-top: 40px; 
+		margin-bottom: 20px;
+	}
+	.status {
+	    text-align: center;
+	    font-size: 17px;
+	    background-color: $green;
+	    width: 131px;
+	    display: block;
+	    margin: 0 auto;
+	    padding: 5px;
+	    border-radius: 23px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	    cursor: pointer;
+	    transition: .3s;
+	    border: 1px solid transparent;
+	    &:hover {
+	    	background-color: transparent;
+	    	transition: .3s;
+	    	border: 1px solid $green;
+	    	color: $green;
+	    }
+	}
+	.status-title {
+		text-align: center;
+		font-size: 13px;
+		color: $green;
+	}
+	.name {
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.nav {
+		padding: 0;
+		margin: 0;
+		li {
+			display: block;
+			list-style: none;
+			border-bottom: 1px solid #4b86a3;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 44px;
+			position: relative;
+			input {
+				&[type="search"] {
+					background-color: transparent;
+					color: $fontLight;
+					border: none;
+					transition: .3s;
+					&:focus {
+						outline: none;
+						background-color: #fff;
+						transition: .3s;
+						color: $blue;
+							&::-webkit-input-placeholder {
+								color: $blue;
+							}
+					}
+					&::-webkit-input-placeholder { 
+						color: $fontLight;
+					}
+				}
+				&[type="submit"] {
+					background: none;
+					border: none;
+					background-image: url(../img/search.png);
+					background-size: cover;
+					width: 15px;
+					height: 15px;
+					position: absolute;
+					right: 30px;
+					top: 14px;
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+main.content {
+	margin-left: 260px;
+	background-color: $fontLight;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+	padding: 30px;
+}
