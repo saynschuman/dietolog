@@ -964,7 +964,15 @@ main.content {
         color: #fff;
         border: none;
         font-size: 16px;
-        margin-top: 20px; }
+        margin-top: 20px;
+        border: 1px solid #89d040;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        main.content .left .data input[type="submit"]:hover {
+          background-color: #fff;
+          color: #89d040;
+          -webkit-transition: .3s;
+          transition: .3s; }
       main.content .left .data::before {
         content: '';
         position: absolute;

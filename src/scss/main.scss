@@ -284,6 +284,13 @@ main.content {
 				border: none;
 				font-size: 16px;
 				margin-top: 20px;
+				border: 1px solid $green;
+				transition: .3s;
+				&:hover {
+					background-color: #fff;
+					color: $green;
+					transition: .3s;
+				}
 			}
 			&::before {
 					content: '';
