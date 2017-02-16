@@ -197,22 +197,46 @@ header {
 			&.opened {
 				display: block;
 				transition: .1s;
+				border-bottom: none;
 				&::after {
 				    transform: rotate(180deg);
 				    transition: .1s;
 				}				
 				.sub-menu {
-					margin-top: 7px;
+					margin-top: 15px;
 					display: block;
 					li {
+						a {
+							color: $fontLight;
+							text-decoration: none;
+						}
+						opacity: .9;
+						&:first-child {
+							&::before {
+								display: block;
+								visibility: hidden;
+							}
+						}
 						&::before {
-							display: none;
+						    content: '→';
+						    background-image: none;
+						    left: -10px;
+						    top: 6px;
+						    visibility: hidden;
+						}
+						&:hover {
+							opacity: 1;
+							&::before {
+								visibility: visible;
+							}
 						}
 						&::after {
 							display: none;
 						}
 						padding-left: 10px;
 						border-bottom: none;
+						padding-top: 5px;
+						padding-bottom: 5px;
 					}
 				}
 			}

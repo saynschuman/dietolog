@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: OpenSansRegular;
   src: url(../fonts/Open_Sans/OpenSans-Regular.ttf); }
@@ -263,7 +264,8 @@ header {
       header .nav li.opened {
         display: block;
         -webkit-transition: .1s;
-        transition: .1s; }
+        transition: .1s;
+        border-bottom: none; }
         header .nav li.opened::after {
           -webkit-transform: rotate(180deg);
               -ms-transform: rotate(180deg);
@@ -271,13 +273,30 @@ header {
           -webkit-transition: .1s;
           transition: .1s; }
         header .nav li.opened .sub-menu {
-          margin-top: 7px;
+          margin-top: 15px;
           display: block; }
           header .nav li.opened .sub-menu li {
+            opacity: .9;
             padding-left: 10px;
-            border-bottom: none; }
+            border-bottom: none;
+            padding-top: 5px;
+            padding-bottom: 5px; }
+            header .nav li.opened .sub-menu li a {
+              color: #fff;
+              text-decoration: none; }
+            header .nav li.opened .sub-menu li:first-child::before {
+              display: block;
+              visibility: hidden; }
             header .nav li.opened .sub-menu li::before {
-              display: none; }
+              content: '→';
+              background-image: none;
+              left: -10px;
+              top: 6px;
+              visibility: hidden; }
+            header .nav li.opened .sub-menu li:hover {
+              opacity: 1; }
+              header .nav li.opened .sub-menu li:hover::before {
+                visibility: visible; }
             header .nav li.opened .sub-menu li::after {
               display: none; }
 
