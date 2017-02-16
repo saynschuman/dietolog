@@ -311,16 +311,35 @@ main.content {
 				position: relative;
 				height: auto;
 				width: auto;
+				.q {
+				    font-family: lcd;
+				    position: absolute;
+				    top: 96px;
+				    z-index: 1;
+				    color: $fontLight;
+				    font-size: 58px;
+				    left: 37px;
+				    letter-spacing: 5px;
+				    font-weight: 600;
+					span {
+						font-family: OpenSansBold;
+						font-size: 38px;
+					}
+				}
 				&::before {
 				    	content: 'Колличество товара';
 				    	position: absolute;
 				    	font-size: 19px;
 				    	font-family: OpenSansSemibold;
 				    	top: 60px;
-				    	left: 0;
+				    	left: -10px;
+				    	z-index: 2;
+				    	padding: 5px;
+				    	background-color: rgba(255,255,255,.7);
+				    	border-radius: 5px;
 				}	
 				&::after {
-				    content: '000 г.';
+				    content: '';
 				    color: $fontLight;
 				    position: absolute;
 				    font-size: 58px;
@@ -329,7 +348,6 @@ main.content {
 				    left: -20px;
 				    width: 260px;
 				    height: 99px;
-				    font-family: lcd;
 				    padding-left: 50px;
 				    letter-spacing: 5px;
 
@@ -347,6 +365,13 @@ main.content {
 	.right {
 		width: 35%;
 		float: right;
+		padding-top: 50px;
+		.title {
+			text-align: center;
+			span {
+				font-style: italic; 
+			}
+		}
 	}
 	.label {
 		display: block;

@@ -990,15 +990,33 @@ main.content {
         position: relative;
         height: auto;
         width: auto; }
+        main.content .left .good .thumb .q {
+          font-family: lcd;
+          position: absolute;
+          top: 96px;
+          z-index: 1;
+          color: #fff;
+          font-size: 58px;
+          left: 37px;
+          letter-spacing: 5px;
+          font-weight: 600; }
+          main.content .left .good .thumb .q span {
+            font-family: OpenSansBold;
+            font-size: 38px; }
         main.content .left .good .thumb::before {
           content: 'Колличество товара';
           position: absolute;
           font-size: 19px;
           font-family: OpenSansSemibold;
           top: 60px;
-          left: 0; }
+          left: -10px;
+          z-index: 2;
+          padding: 5px;
+          background-color: rgba(255, 255, 255, 0.7);
+          -webkit-border-radius: 5px;
+                  border-radius: 5px; }
         main.content .left .good .thumb::after {
-          content: '000 г.';
+          content: '';
           color: #fff;
           position: absolute;
           font-size: 58px;
@@ -1007,7 +1025,6 @@ main.content {
           left: -20px;
           width: 260px;
           height: 99px;
-          font-family: lcd;
           padding-left: 50px;
           letter-spacing: 5px; }
       main.content .left .good img {
@@ -1018,7 +1035,12 @@ main.content {
         position: relative; }
   main.content .right {
     width: 35%;
-    float: right; }
+    float: right;
+    padding-top: 50px; }
+    main.content .right .title {
+      text-align: center; }
+      main.content .right .title span {
+        font-style: italic; }
   main.content .label {
     display: block;
     font-size: 15px;

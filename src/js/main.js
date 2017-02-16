@@ -21,5 +21,26 @@
 	$('input').styler();
 	// end styler
 
+       $( ".slider" ).slider({
+       			orientation: "vertical",
+ 	        	animate: true,
+              	range: "min",
+              	value: 50,
+              	min: 10,
+              	max: 100,
+	        step: 10,
+              
+	//Получаем значение и выводим его на странице
+              	slide: function( event, ui ) {
+                  		$( "#slider-result" ).html( ui.value );
+              	},
+
+	//Обновляем скрытое поле формы, так что можно передать данные с помощью формы
+              	change: function(event, ui) { 
+              		$('#hidden').attr('value', ui.value);
+              	}
+	
+});
+
 
 }(jQuery));
