@@ -17,6 +17,9 @@
 	})
 	// end sub-menu
 
+	//start styler
+	$('input').styler();
+	// end styler
 
 
 }(jQuery));

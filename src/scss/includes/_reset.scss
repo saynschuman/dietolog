@@ -45,3 +45,45 @@ table {
     clear: both;
   }
 }
+
+/* хром, сафари */
+header::-webkit-scrollbar,
+body::-webkit-scrollbar { width: 0; }
+ 
+/* ie 10+ */
+header,
+body { -ms-overflow-style: none; }
+ 
+input:focus, 
+button:focus {
+	outline: none;
+}
+
+.jq-radio.checked .jq-radio__div {
+	background: $green;
+    margin: 6px 0 0 6px !important;
+    width: 16px !important;
+    height: 16px !important;
+    box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.2) !important;
+    position: relative;
+    z-index: 1;
+}
+
+.jq-radio {
+	width: 30px;
+	height: 30px;
+	position: relative;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3) !important;
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+	    width: 16px  !important;
+	    height: 16px  !important;
+	    background: #c6c6c6  !important;
+	    border-radius: 100%  !important;
+	    margin: 6px 0 0 6px  !important;	
+	    box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.2) !important;	
+	}
+}

@@ -1,6 +1,9 @@
 @import 'includes/_var';
 @import 'includes/_fonts';
+@import 'includes/_form-styler';
 @import 'includes/_reset';
+
+
 
 body {
 	font-family: OpenSansRegular;
@@ -250,5 +253,171 @@ main.content {
 	margin-left: 260px;
 	background-color: $fontLight;
 	box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
-	padding: 30px;
+	height: auto;
+	color: $fontDark;
+	.left {
+		width: 65%;
+		float: left;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0px;
+			width: 5px;
+			height: 100%;
+			background-image: url(../img/ver_line.png);
+			background-repeat-x: no-repeat;
+			background-repeat-y: repeat;
+			top: 0;
+		}		
+		.data {
+			position: relative;
+			padding: 50px;
+			input[type="submit"] {
+				height: 40px;
+				width: 265px;
+				display: block;
+				margin: 0 auto;
+				background-color: $green;
+				border-radius: 23px;
+				color: $fontLight;
+				border: none;
+				font-size: 16px;
+				margin-top: 20px;
+			}
+			&::before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 5px;
+					left: 0;
+					background-image: url(../img/hor-line.jpg);
+					background-repeat-x: repeat;
+					background-repeat-y: no-repeat;
+			}				
+		}
+		.good {
+			position: relative;
+			padding: 50px;
+			.thumb {
+				position: relative;
+				height: auto;
+				width: auto;
+				&::before {
+				    	content: 'Колличество товара';
+				    	position: absolute;
+				    	font-size: 19px;
+				    	font-family: OpenSansSemibold;
+				    	top: 60px;
+				    	left: 0;
+				}	
+				&::after {
+				    content: '000 г.';
+				    color: $fontLight;
+				    position: absolute;
+				    font-size: 58px;
+				    background-image: url(../img/triangle.png);
+				    top: 98px;
+				    left: -20px;
+				    width: 260px;
+				    height: 99px;
+				    font-family: lcd;
+				    padding-left: 50px;
+				    letter-spacing: 5px;
+
+				}								
+			}
+			img {
+			    display: block;
+			    max-width: 100%;
+			    height: auto;
+			    float: right;
+			    position: relative;
+			}
+		}		
+	}
+	.right {
+		width: 35%;
+		float: right;
+	}
+	.label {
+		display: block;
+		font-size: 15px;
+		font-family: OpenSansSemibold
+	}
+	label {
+		cursor: pointer;
+		font-family: OpenSansSemibold;
+		font-size: 15px;
+	}
+	ul {
+		margin-bottom: 8px;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			input {
+				display: block;
+			}
+			ul {
+				li {
+					margin: 0;
+					label {
+						font-size: 13px;
+						font-family: OpenSansRegular;
+					}
+				}
+			}
+		}
+	}
+	.title {
+		font-size: 19px;
+		font-family: OpenSansSemibold;
+		margin-bottom: 15px;
+	}
+	.d-left {
+		padding: 0;
+		padding-top: 12px;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			width: 1px;
+			height: 100%;
+			background-color: $gray;
+			top: 0;
+		}		
+		input {
+		    display: block;
+		    width: 90%;
+		    margin-bottom: 12px;
+		    border: 1px solid $gray;
+		    border-radius: 3px;
+		    height: 33px;
+		    padding-left: 4px;
+		}
+	}
+	.d-right {
+		padding-left: 10%;
+		padding-bottom: 20px;
+		input {
+			margin-bottom: 12px;
+			display: block;
+			padding-left: 4px;
+			border: 1px solid $gray;
+			border-radius: 3px;
+			height: 33px;
+			width: 100%;
+		}
+		padding: 0;
+		.r-left {
+			padding: 0;
+			padding-left: 10%;
+			padding-bottom: 20px;
+		}
+		.r-right {
+			padding: 0;
+			padding-left: 10%;
+		}
+	}
 }
