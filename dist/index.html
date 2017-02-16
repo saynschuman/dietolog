@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project</title>
     <link href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,11 +22,35 @@
       <div class="status-title">Ваш статус:</div>
       <div class="status">Активен</div>
       <ul class="nav">
-        <li><input type="search" placeholder="Поиск"><input type="submit" value=" "></li>
-        <li>Главная</li>
-        <li>Курсы</li>
-        <li>Связь с диетологом</li>
-        <li>Продукция</li>
+        <li><form action=""><input type="search" required placeholder="Поиск"><input type="submit" value=" "></form></li>
+        <li class="parrent"><span>Главная</span>
+          <ul class="sub-menu">
+            <li>sub-item-1</li>
+            <li>sub-item-2</li>
+            <li>sub-item-3</li>
+          </ul>
+        </li>
+        <li class="parrent"><span>Курсы</span>
+          <ul class="sub-menu">
+            <li>sub-item-1</li>
+            <li>sub-item-2</li>
+            <li>sub-item-3</li>
+          </ul>        
+        </li>
+        <li class="parrent"><span>Связь с диетологом</span>
+          <ul class="sub-menu">
+            <li>sub-item-1</li>
+            <li>sub-item-2</li>
+            <li>sub-item-3</li>
+          </ul>        
+        </li>
+        <li class="parrent"><span>Продукция</span>
+          <ul class="sub-menu">
+            <li>sub-item-1</li>
+            <li>sub-item-2</li>
+            <li>sub-item-3</li>
+          </ul>
+        </li>
       </ul>
     </header>
     <main class="content">
