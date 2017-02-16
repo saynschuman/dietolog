@@ -11,6 +11,8 @@ header {
 	color: $fontLight;
 	width: 260px;
 	position: fixed;
+    overflow-y: auto;
+    height: 100%;	
 	&::before {
 		content: '';
 		position: absolute;

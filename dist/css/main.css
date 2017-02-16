@@ -97,7 +97,9 @@ body {
 header {
   color: #fff;
   width: 260px;
-  position: fixed; }
+  position: fixed;
+  overflow-y: auto;
+  height: 100%; }
   header::before {
     content: '';
     position: absolute;
