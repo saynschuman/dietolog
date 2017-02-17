@@ -1210,7 +1210,8 @@ main.content {
     width: 100%; }
     main.content .time-sc .left {
       width: 40%;
-      float: left; }
+      float: left;
+      padding-bottom: 250px; }
       main.content .time-sc .left .calendar {
         display: block;
         width: 163px;
@@ -1273,6 +1274,32 @@ main.content {
             margin-bottom: 10px; }
           main.content .time-sc .left .datas .r label {
             display: block; }
+      main.content .time-sc .left input[type="submit"] {
+        position: absolute;
+        bottom: 140px;
+        left: 50%;
+        height: 40px;
+        width: 265px;
+        display: block;
+        margin: 0 auto;
+        background-color: #89d040;
+        -webkit-border-radius: 23px;
+                border-radius: 23px;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        margin-top: 20px;
+        border: 1px solid #89d040;
+        -webkit-transition: .3s;
+        transition: .3s;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+        main.content .time-sc .left input[type="submit"]:hover {
+          background-color: #fff;
+          color: #89d040;
+          -webkit-transition: .3s;
+          transition: .3s; }
     main.content .time-sc .right {
       width: 60%;
       float: right; }
@@ -1299,5 +1326,6 @@ footer {
   text-align: right; }
   footer ul li {
     display: inline-block;
-    color: #fff;
-    margin-left: 90px; }
+    color: #bcbcbc;
+    margin-left: 90px;
+    font-size: 17px; }

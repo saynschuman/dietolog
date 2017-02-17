@@ -558,6 +558,7 @@ main.content {
 		.left {
 			width: 40%;
 			float: left;
+			padding-bottom: 250px;
 			.calendar {
 				display: block;
 				width: 163px;
@@ -632,6 +633,29 @@ main.content {
 					}
 				}
 			}
+			input[type="submit"] {
+				position: absolute;
+				bottom: 140px;
+				left: 50%;
+				height: 40px;
+				width: 265px;
+				display: block;
+				margin: 0 auto;
+				background-color: $green;
+				border-radius: 23px;
+				color: $fontLight;
+				border: none;
+				font-size: 16px;
+				margin-top: 20px;
+				border: 1px solid $green;
+				transition: .3s;
+				transform: translateX(-50%);
+				&:hover {
+					background-color: #fff;
+					color: $green;
+					transition: .3s;
+				}
+			}
 		}
 		.right {
 			width: 60%;
@@ -665,8 +689,9 @@ footer {
 	ul {
 		li {
 			display: inline-block;
-			color: $fontLight;
+			color: #bcbcbc;
 			margin-left: 90px;
+			font-size: 17px;
 		}
 	}
 }
