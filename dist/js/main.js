@@ -20,19 +20,42 @@
 	//start styler
 	$('input').styler();
 	// end styler
-
+	$(window).on('load', function(){
+		$( ".ui-slider-handle" ).html( 5 );
+		$('#5').css('opacity', '1');
+	})
        $( ".slider" ).slider({
        			orientation: "vertical",
- 	        	animate: true,
+ 	        	animate: 'fast',
               	range: "min",
-              	value: 50,
-              	min: 10,
-              	max: 100,
-	        step: 10,
-              
+              	value: 5,
+              	min: 0,
+              	max: 5,
+	        step: 1,
 	//Получаем значение и выводим его на странице
               	slide: function( event, ui ) {
-                  		$( "#slider-result" ).html( ui.value );
+                  		$( ".ui-slider-handle" ).html( ui.value );
+                  		if (ui.value == 1) { 
+                  			$('.human').css('opacity', '0');
+                  			$('#1').css('opacity', '1');
+                  		}
+                  		if (ui.value == 2) { 
+                  			$('.human').css('opacity', '0');
+                  			$('#2').css('opacity', '1');
+                  		}
+                  		if (ui.value == 3) { 
+                  			$('.human').css('opacity', '0');
+                  			$('#3').css('opacity', '1');
+                  		}
+                  		if (ui.value == 4) { 
+                  			$('.human').css('opacity', '0');
+                  			$('#4').css('opacity', '1');
+                  		}
+                  		if (ui.value == 5) { 
+                  			$('.human').css('opacity', '0');
+                  			$('#5').css('opacity', '1');
+                  		}
+                  		
               	},
 
 	//Обновляем скрытое поле формы, так что можно передать данные с помощью формы

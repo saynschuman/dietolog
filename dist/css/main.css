@@ -1036,11 +1036,51 @@ main.content {
   main.content .right {
     width: 35%;
     float: right;
-    padding-top: 50px; }
+    padding-top: 50px;
+    position: relative; }
     main.content .right .title {
       text-align: center; }
       main.content .right .title span {
         font-style: italic; }
+    main.content .right .ui-widget.ui-widget-content {
+      border: 1px solid #e9e9e9;
+      position: absolute;
+      left: 65%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      margin-top: 90px; }
+    main.content .right .ui-state-default, main.content .right .ui-widget-content .ui-state-default, main.content .right .ui-widget-header .ui-state-default, main.content .right .ui-button, main.content .right html .ui-button.ui-state-disabled:hover, main.content .right html .ui-button.ui-state-disabled:active {
+      border: none;
+      background: none;
+      font-weight: normal;
+      background-image: url(../img/sl.png);
+      height: 40px;
+      width: 50px;
+      background-size: cover;
+      margin-left: -19px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 9px;
+      padding-left: 27px;
+      padding-top: 12px; }
+      main.content .right .ui-state-default:focus, main.content .right .ui-widget-content .ui-state-default:focus, main.content .right .ui-widget-header .ui-state-default:focus, main.content .right .ui-button:focus, main.content .right html .ui-button.ui-state-disabled:hover:focus, main.content .right html .ui-button.ui-state-disabled:active:focus {
+        outline: none; }
+      main.content .right .ui-state-default:hover, main.content .right .ui-widget-content .ui-state-default:hover, main.content .right .ui-widget-header .ui-state-default:hover, main.content .right .ui-button:hover, main.content .right html .ui-button.ui-state-disabled:hover:hover, main.content .right html .ui-button.ui-state-disabled:active:hover {
+        cursor: pointer; }
+    main.content .right .ui-slider-vertical {
+      width: 1em;
+      height: 320px; }
+    main.content .right .human {
+      position: absolute;
+      left: 30%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      margin-top: 20px;
+      opacity: 0;
+      width: auto;
+      height: 400px; }
   main.content .label {
     display: block;
     font-size: 15px;

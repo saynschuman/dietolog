@@ -28,24 +28,24 @@
 			</div>
 			<div class="d-right col-md-6">
 				<div class="col-md-6 r-left">
-					<label for="">Рост(см)</label>
-					<input required placeholder="0" type="text">
-					<label for="">Вес(кг)</label>
-					<input required placeholder="0" type="text">
-					<label for="">Бедра(см)</label>
-					<input required placeholder="0" type="text">
-					<label for="">Шея(см)</label>
-					<input required placeholder="0" type="text">
+					<label for="height">Рост(см)</label>
+					<input required placeholder="0" type="text" id="height">
+					<label for="weight">Вес(кг)</label>
+					<input required placeholder="0" type="text" id="weight">
+					<label for="thigh">Бедра(см)</label>
+					<input required placeholder="0" type="text" id="thigh">
+					<label for="neck">Шея(см)</label>
+					<input required placeholder="0" type="text" id="neck">
 				</div>
 				<div class="col-md-6 r-right">
-					<label for="">Возраст</label>
-					<input required placeholder="0" type="text">
-					<label for="">Грудь(см)</label>
-					<input required placeholder="0" type="text">
-					<label for="">Талия(см)</label>
-					<input required placeholder="0" type="text">
-					<label for="">Бицепс(см)</label>
-					<input required placeholder="0" type="text">
+					<label for="age">Возраст</label>
+					<input required placeholder="0" type="text" id="age">
+					<label for="chest">Грудь(см)</label>
+					<input required placeholder="0" type="text" id="chest">
+					<label for="waist">Талия(см)</label>
+					<input required placeholder="0" type="text" id="waist">
+					<label for="biceps">Бицепс(см)</label>
+					<input required placeholder="0" type="text" id="biceps">
 				</div>
 			</div>
 			<input type="submit" value="Готово">
@@ -59,12 +59,13 @@
 	</div>
 	<div class="right">
 		<div class="title">Временная шкала <span>(месяц)</span></div>
-		
-
-<div class="slider"></div> 
-<div id="slider-result">50</div>   
-<input type="hidden" id="hidden"/>
-
+			<img class="human" id="5" src="img/1.jpg" alt="">
+			<img class="human" id="4" src="img/2.jpg" alt="">
+			<img class="human" id="3" src="img/3.jpg" alt="">
+			<img class="human" id="2" src="img/4.jpg" alt="">
+			<img class="human" id="1" src="img/5.jpg" alt="">
+			<div class="slider"></div> 
+			<input type="hidden" id="hidden"/>
 
 	</div>
 </main>

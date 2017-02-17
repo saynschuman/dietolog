@@ -366,12 +366,54 @@ main.content {
 		width: 35%;
 		float: right;
 		padding-top: 50px;
+		position: relative;
 		.title {
 			text-align: center;
 			span {
 				font-style: italic; 
 			}
 		}
+		.ui-widget.ui-widget-content {
+		    border: 1px solid #e9e9e9;
+		    position: absolute;
+		    left: 65%;
+		    transform: translateX(-50%);
+		    margin-top: 90px;
+		}
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+		    border: none;
+		    background: none;
+		    font-weight: normal;
+		    background-image: url(../img/sl.png);
+		    height: 40px;
+		    width: 50px;
+		    background-size: cover;
+		    margin-left: -19px;
+		    text-decoration: none;
+		    color: $fontLight;
+		    font-size: 9px;
+		    padding-left: 27px;
+		    padding-top: 12px;
+		    &:focus {
+		    	outline: none;
+		    }	
+		    &:hover {
+		    	cursor: pointer;
+		    }
+		}		
+		.ui-slider-vertical {
+		    width: 1em;
+		    height: 320px;
+		}	
+		.human {
+		    position: absolute;
+		    left: 30%;
+		    transform: translateX(-50%);
+		    margin-top: 20px;
+		    opacity: 0;
+		    width: auto;
+		    height: 400px;
+		}	
 	}
 	.label {
 		display: block;
