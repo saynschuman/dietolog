@@ -56,78 +56,127 @@
       </ul>
     </header>
 <main class="content clearfix">
-	<div class="left clearfix">
-		<form class="data clearfix">
-			<div class="title">Ваши данные</div>
-			<div class="d-left col-md-6">
-				<label for="name">Имя</label>
-				<input required id="name" placeholder="Анна" type="text">
-				<label for="surname">Фамилия</label>
-				<input required id="surname" placeholder="Иванова" type="text">
-				<ul>
-					<li><span class="label">Ваш пол</span></li>
-					<li>
-						<ul class="radio">
-							<li><label for="female">Жен.</label></li>
-							<li><input required type="radio" id="female" name="gender"></li>
-						</ul>	
-					</li>
-					<li>
-						<ul class="radio">
-							<li><label for="male">Муж.</label></li>
-							<li><input required type="radio" id="male" name="gender"></li>
-						</ul>						
-					</li>					
-				</ul>
-				<label for="promo">Промокод</label>
-				<input placeholder="RS-343" id="promo" type="text">
-				<label for=""></label>
-			</div>
-			<div class="d-right col-md-6">
-				<div class="col-md-6 r-left">
-					<label for="height">Рост(см)</label>
-					<input required placeholder="0" type="text" id="height">
-					<label for="weight">Вес(кг)</label>
-					<input required placeholder="0" type="text" id="weight">
-					<label for="thigh">Бедра(см)</label>
-					<input required placeholder="0" type="text" id="thigh">
-					<label for="neck">Шея(см)</label>
-					<input required placeholder="0" type="text" id="neck">
+	<div class="wh">
+		<div class="left clearfix">
+			<form class="data clearfix">
+				<div class="title">Ваши данные</div>
+				<div class="d-left col-md-6">
+					<label for="name">Имя</label>
+					<input required id="name" placeholder="Анна" type="text">
+					<label for="surname">Фамилия</label>
+					<input required id="surname" placeholder="Иванова" type="text">
+					<ul>
+						<li><span class="label">Ваш пол</span></li>
+						<li>
+							<ul class="radio">
+								<li><label for="female">Жен.</label></li>
+								<li><input required type="radio" id="female" name="gender"></li>
+							</ul>	
+						</li>
+						<li>
+							<ul class="radio">
+								<li><label for="male">Муж.</label></li>
+								<li><input required type="radio" id="male" name="gender"></li>
+							</ul>						
+						</li>					
+					</ul>
+					<label for="promo">Промокод</label>
+					<input placeholder="RS-343" id="promo" type="text">
+					<label for=""></label>
 				</div>
-				<div class="col-md-6 r-right">
-					<label for="age">Возраст</label>
-					<input required placeholder="0" type="text" id="age">
-					<label for="chest">Грудь(см)</label>
-					<input required placeholder="0" type="text" id="chest">
-					<label for="waist">Талия(см)</label>
-					<input required placeholder="0" type="text" id="waist">
-					<label for="biceps">Бицепс(см)</label>
-					<input required placeholder="0" type="text" id="biceps">
+				<div class="d-right col-md-6">
+					<div class="col-md-6 r-left">
+						<label for="height">Рост(см)</label>
+						<input required placeholder="0" type="text" id="height">
+						<label for="weight">Вес(кг)</label>
+						<input required placeholder="0" type="text" id="weight">
+						<label for="thigh">Бедра(см)</label>
+						<input required placeholder="0" type="text" id="thigh">
+						<label for="neck">Шея(см)</label>
+						<input required placeholder="0" type="text" id="neck">
+					</div>
+					<div class="col-md-6 r-right">
+						<label for="age">Возраст</label>
+						<input required placeholder="0" type="text" id="age">
+						<label for="chest">Грудь(см)</label>
+						<input required placeholder="0" type="text" id="chest">
+						<label for="waist">Талия(см)</label>
+						<input required placeholder="0" type="text" id="waist">
+						<label for="biceps">Бицепс(см)</label>
+						<input required placeholder="0" type="text" id="biceps">
+					</div>
 				</div>
-			</div>
-			<input type="submit" value="Готово">
-		</form>
-		<div class="good clearfix">
-			<div class="thumb">
-				<img src="img/box.jpg" alt="">
-				<div class="q">000 <span>г.</span></div>
+				<input type="submit" value="Готово">
+			</form>
+			<div class="good clearfix">
+				<div class="thumb">
+					<img src="img/box.jpg" alt="">
+					<div class="q">000 <span>г.</span></div>
+				</div>
 			</div>
 		</div>
+		<div class="right">
+			<div class="title">Временная шкала <span>(месяц)</span></div>
+				<img class="human" id="5" src="img/1.jpg" alt="">
+				<img class="human" id="4" src="img/2.jpg" alt="">
+				<img class="human" id="3" src="img/3.jpg" alt="">
+				<img class="human" id="2" src="img/4.jpg" alt="">
+				<img class="human" id="1" src="img/5.jpg" alt="">
+				<div class="slider"></div> 
+				<input type="hidden" id="hidden"/>
+				<div class="weight">текущий вес <span>00 кг</span></div>
+				<a class="share">Поделиться <img src="img/tr.png" alt=""></a>
+		</div>
 	</div>
-	<div class="right">
-		<div class="title">Временная шкала <span>(месяц)</span></div>
-			<img class="human" id="5" src="img/1.jpg" alt="">
-			<img class="human" id="4" src="img/2.jpg" alt="">
-			<img class="human" id="3" src="img/3.jpg" alt="">
-			<img class="human" id="2" src="img/4.jpg" alt="">
-			<img class="human" id="1" src="img/5.jpg" alt="">
-			<div class="slider"></div> 
-			<input type="hidden" id="hidden"/>
+	<div class="time-sc wh clearfix">
+		<div class="left">
+			<div class="calendar">
+				<ul>
+					<li><img src="img/cal_ic.png" alt=""></li>
+					<li><input type="text" value="21.07.17"></li>
+				</ul>
+			</div>
+			<div class="datas clearfix">
+				<div class="l">
+					<img src="img/pc-big.jpg" alt="">
+					<div class="cur-height">текущий вес  <span>14.07.17</span></div>
+					<div class="height">60 кг</div>
+				</div>
+				<div class="r">
+						<label for="height-r">Рост(см)</label>
+						<input required placeholder="0" type="text" id="height-r">
+						<label for="weight-r">Вес(кг)</label>
+						<input required placeholder="0" type="text" id="weight-r">
+						<label for="thigh-r">Бедра(см)</label>
+						<input required placeholder="0" type="text" id="thigh-r">
+						<label for="neck-r">Шея(см)</label>
+						<input required placeholder="0" type="text" id="neck-r">
+						<label for="chest-r">Грудь(см)</label>
+						<input required placeholder="0" type="text" id="chest-r">
+						<label for="waist-r">Талия(см)</label>
+						<input required placeholder="0" type="text" id="waist-r">
+						<label for="biceps-r">Бицепс(см)</label>
+						<input required placeholder="0" type="text" id="biceps-r">
+				</div>
+			</div>
+		</div>
+		<div class="right"></div>
+	</div>
+	<div class="instr">
+		<div class="title">ИНСТРУКЦИЯ</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 	</div>
 </main>
     <footer class="footer">
-
+    <ul>
+    	<li>(000) 000 00 00</li>
+    	<li>mail</li>
+    	<li>adress</li>
+    </ul>
     </footer>
 
 	<script src="libs/js/jquery.min.js"></script> 

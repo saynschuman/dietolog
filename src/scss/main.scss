@@ -251,10 +251,14 @@ header {
 
 main.content {
 	margin-left: 260px;
-	background-color: $fontLight;
 	box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
 	height: auto;
 	color: $fontDark;
+	.wh {
+		background-color: $fontLight;
+		float: left;
+		width: 100%;
+	}
 	.left {
 		width: 65%;
 		float: left;
@@ -404,6 +408,16 @@ main.content {
 		.ui-slider-vertical {
 		    width: 1em;
 		    height: 320px;
+		    cursor: pointer;
+		    &::after {
+			    content: 'Перетаскивайте ползунок, чтобы видеть процесс вашего похудения';
+			    position: absolute;
+			    right: -110px;
+			    top: -21px;
+			    color: #9c9c9c;
+			    font-size: 12px;
+			    width: 89px;
+		    }
 		}	
 		.human {
 		    position: absolute;
@@ -413,7 +427,51 @@ main.content {
 		    opacity: 0;
 		    width: auto;
 		    height: 400px;
-		}	
+		}
+		.weight	{
+			font-size: 16px;
+			font-family: OpenSansLight;
+			position: absolute;
+			margin-top: 430px;
+			left: 50%;
+			transform: translateX(-50%);
+			span {
+				font-size: 35px;
+				font-family: OpenSansSemibold;
+			}
+		}
+		.share {
+			position: absolute;
+			margin-top: 530px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 40px;
+			width: 200px;
+			background-color: $green;
+			border-radius: 23px;
+			color: $fontLight;
+			border: none;
+			font-size: 17px;
+			border: 1px solid $green;
+			transition: .3s;
+			text-align: left;
+			padding-top: 7px;
+			padding-left: 36px;
+			img {
+				margin-left: 12px;
+				position: absolute;
+				transition: .3s;
+			}
+			&:hover {
+				transition: .3s;
+				text-decoration: none;
+				cursor: pointer;
+				img {
+					transform: rotateY(-180deg);
+					transition: .3s;
+				}
+			}
+		}
 	}
 	.label {
 		display: block;
@@ -492,6 +550,123 @@ main.content {
 		.r-right {
 			padding: 0;
 			padding-left: 10%;
+		}
+	}
+	.time-sc {
+		margin-top: 46px;
+		width: 100%;
+		.left {
+			width: 40%;
+			float: left;
+			.calendar {
+				display: block;
+				width: 163px;
+				margin: 0 auto;
+				margin-top: 100px;
+				ul {
+					li {
+						display: inline-block;
+						margin: 0;
+						float: left;
+						&:first-child {
+							background-color: $orange;
+							padding: 4px 10px;
+							border-radius: 4px;
+							margin-right: 5px;
+						}
+						input {
+							height: 37px;
+							width: 111px;
+							border-radius: 3px;
+							border: 1px solid $gray;
+							text-align: center;
+							font-size: 18px;
+							color: #000;
+						}
+					}
+				}
+			}
+			.datas {
+				float: left;
+				width: 100%;
+				margin-top: 50px;
+				.l {
+					width: 50%;
+					float: left;
+					text-align: center;
+					.cur-height {
+						font-size: 13px;
+						font-family: OpenSansLight;
+						margin-top: 10px;
+						span {
+							font-family: OpenSansSemibold;
+						}
+					}
+					.height {
+						font-size: 27px;
+						font-family: OpenSansSemibold;
+					}
+					img {
+						display: block;
+						margin: 0 auto;
+						max-width: 100%;
+						height: auto;						
+					}
+				}
+				.r {
+					width: 50%;
+					float: right;
+					padding-left: 30px;
+					padding-top: 40px;
+					input {
+						display: block;
+						padding-left: 3px;
+						height: 35px;
+						width: 111px;
+						border-radius: 3px;
+						border: 1px solid $gray;
+						margin-bottom: 10px;
+					}
+					label {
+						display: block;
+					}
+				}
+			}
+		}
+		.right {
+			width: 60%;
+			float: right;
+		}
+	}
+	.instr {
+		background-color: $fontLight;
+		margin-top: 46px;
+		width: 100%;
+		float: left;
+		padding-top: 144px;
+		.title {
+			text-align: center;
+			font-size: 35px;
+			margin-bottom: 50px;
+		}
+		p {
+			padding: 0 120px;
+			text-align: justify;
+			margin-bottom: 25px;
+			line-height: 1.5;
+		}
+	}
+}
+footer {
+	margin-left: 260px;
+	background-color: $fontDark;
+	padding: 50px 120px;
+	text-align: right;
+	ul {
+		li {
+			display: inline-block;
+			color: $fontLight;
+			margin-left: 90px;
 		}
 	}
 }
