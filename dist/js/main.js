@@ -85,7 +85,7 @@
 		div.find('.w img').attr('src', 'img/el-wh.png');
 		$(this).attr('src', 'img/el-act.png');
 		$('main.content .time-sc .left .datas .l img').toggleClass('rotate');
-		console.log(attr);
+		
 		
 		
 				

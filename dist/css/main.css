@@ -1441,8 +1441,8 @@ main.content {
               border: 9px solid transparent;
               border-right: 9px solid #ddd; }
           main.content .time-sc .right .scale .block#block-6 {
-            top: 410px;
-            left: 236px;
+            top: 415px;
+            left: 229px;
             background-color: #fca90a;
             color: #000;
             width: 160px; }
@@ -1527,9 +1527,7 @@ main.content {
             top: 260px;
             background-image: url(../img/girl-thin.png);
             height: 135px;
-            width: 33px;
-            -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%); }
+            width: 33px; }
         main.content .time-sc .right .scale .scale-i {
           position: absolute;
           cursor: pointer; }
@@ -1589,7 +1587,7 @@ main.content {
             left: 376px; }
           main.content .time-sc .right .scale .scale-i#b-6 {
             top: 372px;
-            left: 303px; }
+            left: 292px; }
   main.content .instr {
     background-color: #fff;
     margin-top: 46px;
