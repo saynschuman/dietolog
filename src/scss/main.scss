@@ -668,7 +668,7 @@ main.content {
     			margin: 0 auto;
     			margin-top: -10px;
     			width: 245px;
-    			margin-bottom: 30px;
+    			margin-bottom: 100px;
 			}
 			.scale {
 				background-image: url(../img/scale.png);
@@ -678,6 +678,84 @@ main.content {
 				margin: 0 auto; 
 				background-repeat: no-repeat; 
 				position: relative;
+				.b-1 {
+					position: relative;
+				    &::before {
+					    content: '';
+					    position: absolute;
+					    left: 205px;
+					    top: -106px;
+					    background-image: url(../img/girl-thin.png);
+					    height: 135px;
+					    width: 33px;
+					    filter: grayscale(100%);
+				    }					
+				}
+				.b-2 {
+					position: relative;
+				    &::before {
+					    content: '';
+					    position: absolute;
+					    left: 385px;
+					    top: 34px;
+					    background-image: url(../img/girl-thin.png);
+						height: 135px;
+						width: 33px;
+						filter: grayscale(100%);
+				    }					
+				}
+				.b-3 {
+					position: relative;
+				    &::before {
+					    content: '';
+					    position: absolute;
+					    left: 64px;
+					    top: 66px;
+					    background-image: url(../img/girl-thin.png);
+						height: 135px;
+						width: 33px;
+						filter: grayscale(100%);
+				    }					
+				}
+				.b-4 {
+					position: relative;
+				    &::before {
+					    content: '';
+					    position: absolute;
+					    left: 226px;
+					    top: 150px;
+					    background-image: url(../img/girl-thin.png);
+						height: 135px;
+						width: 33px;
+						filter: grayscale(100%);
+				    }					
+				}
+				.b-5 {
+					position: relative;
+				    &::before {
+					    content: '';
+					    position: absolute;
+					    left: 387px;
+					    top: 235px;
+					    background-image: url(../img/girl-thin.png);
+					    height: 135px;
+					    width: 33px;
+					    filter: grayscale(100%);
+				    }					
+				}
+				.b-6 {
+					position: relative;
+				    &::before {
+					    content: '';
+					    position: absolute;
+					    left: 327px;
+					    top: 260px;
+					    background-image: url(../img/girl-thin.png);
+					    height: 135px;
+					    width: 33px;
+					    filter: grayscale(100%);
+				    }					
+				}																				
 				.scale-i {
 					position: absolute;
 					cursor: pointer;
@@ -697,6 +775,66 @@ main.content {
 					    top: 65px;
 					    left: 429px;
 					}
+					&#b-2 {
+					    top: 137px;
+					    left: 408px;
+					}
+					&#w-4 {
+					    top: 145px;
+					    left: 332px;
+					}
+					&#w-5 {
+					    top: 145px;
+					    left: 269px;
+					}
+					&#w-6 {
+					    top: 145px;
+					    left: 205px;
+					}
+					&#w-7 {
+					    top: 145px;
+					    left: 145px;
+					}	
+					&#b-3 {
+					    top: 172px;
+					    left: 92px;
+					}
+					&#w-8 {
+					    top: 226px;
+					    left: 88px;
+					}	
+					&#w-9 {
+					    top: 256px;
+					    left: 138px;
+					}	
+					&#w-10 {
+					    top: 257px;
+					    left: 190px;
+					}	
+					&#b-4 {
+					    top: 259px;
+					    left: 247px;
+					}	
+					&#w-11 {
+					    top: 257px;
+					    left: 298px;
+					}	
+					&#w-12 {
+					    top: 257px;
+					    left: 352px;
+					}	
+					&#b-5 {
+					    top: 332px;
+					    left: 418px;
+					}	
+					&#w-13 {
+					    top: 368px;
+					    left: 376px;
+					}	
+					&#b-6 {
+					    top: 372px;
+					    left: 303px;
+					}																																																																																									
 				}
 			}
 		}

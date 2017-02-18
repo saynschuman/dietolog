@@ -74,4 +74,11 @@
 		$('.inner').addClass('translateY200');
 	})
 
+	//scale
+
+	$('main.content .time-sc .right .scale .img-wr img').click(function(){
+		$(this).attr('src', 'img/el-act.png');
+		$(this).parent().addClass('no-gr');
+	})
+
 }(jQuery));

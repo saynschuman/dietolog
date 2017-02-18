@@ -96,4 +96,8 @@ button:focus {
 .translateY200 {
 	transform: translateY(-400px);
 }
-
+.no-gr {
+	&::before {
+		filter: grayscale(0) !important;
+	}
+}
