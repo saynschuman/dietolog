@@ -741,7 +741,8 @@ button:focus {
 .toggle-header {
   -webkit-transform: translateX(267px);
       -ms-transform: translateX(267px);
-          transform: translateX(267px); }
+          transform: translateX(267px);
+  opacity: 1; }
 
 body {
   font-family: OpenSansRegular;

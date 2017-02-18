@@ -9,7 +9,8 @@
   header {
     width: 267px;
     z-index: 0;
-    background: #558da8; }
+    background: #558da8;
+    opacity: 0; }
   footer,
   main.content {
     width: 100%;
