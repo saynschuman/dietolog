@@ -1335,6 +1335,15 @@ main.content {
           main.content .time-sc .right .scale .scale-i#b-1 {
             top: -6px;
             left: 229px; }
+          main.content .time-sc .right .scale .scale-i#w-1 {
+            top: 32px;
+            left: 280px; }
+          main.content .time-sc .right .scale .scale-i#w-2 {
+            top: 32px;
+            left: 355px; }
+          main.content .time-sc .right .scale .scale-i#w-3 {
+            top: 65px;
+            left: 429px; }
   main.content .instr {
     background-color: #fff;
     margin-top: 46px;
