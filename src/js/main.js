@@ -65,7 +65,13 @@
 	
 });
 
-// slider 
+	// slider 
+	$('.ar-top').click(function(){
+		$('.inner').removeClass('translateY200');
 
+	})
+	$('.ar-bot').click(function(){
+		$('.inner').addClass('translateY200');
+	})
 
 }(jQuery));

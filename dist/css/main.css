@@ -721,6 +721,11 @@ button:focus {
   padding: 7px 0 !important;
   background-color: #fff; }
 
+.translateY200 {
+  -webkit-transform: translateY(-400px);
+      -ms-transform: translateY(-400px);
+          transform: translateY(-400px); }
+
 body {
   font-family: OpenSansRegular;
   background-color: #558da8; }
@@ -1307,13 +1312,80 @@ main.content {
     main.content .time-sc .right {
       width: 60%;
       float: right; }
+      main.content .time-sc .right pre {
+        color: #9c9c9c;
+        font-size: 12px;
+        font-family: OpenSansRegular;
+        display: block;
+        margin: 0 auto;
+        margin-top: -10px;
+        width: 245px;
+        margin-bottom: 30px; }
+      main.content .time-sc .right .scale {
+        background-image: url(../img/scale.png);
+        width: 460px;
+        height: 515px;
+        display: block;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        position: relative; }
+        main.content .time-sc .right .scale .scale-i {
+          position: absolute;
+          cursor: pointer; }
+          main.content .time-sc .right .scale .scale-i#b-1 {
+            top: -6px;
+            left: 229px; }
   main.content .instr {
     background-color: #fff;
     margin-top: 46px;
     width: 100%;
     float: left;
     padding-top: 144px;
-    padding-bottom: 144px; }
+    padding-bottom: 144px;
+    position: relative; }
+    main.content .instr .slides {
+      height: 380px;
+      overflow: hidden;
+      padding: 20px 0;
+      position: relative; }
+      main.content .instr .slides .inner {
+        -webkit-transition: .3s;
+        transition: .3s; }
+    main.content .instr .ar {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 145px;
+      right: 0;
+      cursor: pointer; }
+      main.content .instr .ar img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 18px; }
+    main.content .instr .ar-top {
+      background-color: #89d040;
+      opacity: .9;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      main.content .instr .ar-top:hover {
+        opacity: 1;
+        -webkit-transition: 1;
+        transition: 1; }
+    main.content .instr .ar-bot {
+      background-color: #558da8;
+      padding-top: 20px;
+      margin-top: 50px;
+      opacity: .9;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      main.content .instr .ar-bot:hover {
+        opacity: 1;
+        -webkit-transition: 1;
+        transition: 1; }
+      main.content .instr .ar-bot img {
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
     main.content .instr .title {
       text-align: center;
       font-size: 35px;
