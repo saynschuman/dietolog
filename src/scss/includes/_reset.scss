@@ -102,6 +102,12 @@ button:focus {
 	}
 }
 
+.gr {
+	&::before {
+		filter: grayscale(100%);
+	}
+}
+
 .rotate {
 	transform: rotateY(360deg);
 }

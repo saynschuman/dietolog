@@ -713,6 +713,125 @@ main.content {
 				margin: 0 auto; 
 				background-repeat: no-repeat; 
 				position: relative;
+				.w-1 {
+					position: relative;
+					&::after {
+						content: '23.03.';
+						position: absolute;
+					    left: 280px;
+					    top: 15px;
+					}
+				}
+				.w-2 {
+					position: relative;
+					&::after {
+						content: '29.03.';
+						position: absolute;
+					    left: 351px;
+					    top: 15px;
+					}
+				}
+				.w-3 {
+					position: relative;
+					&::after {
+						content: '4.04.';
+						position: absolute;
+					    left: 461px;
+					    top: 68px;
+					}
+				}
+				.w-4 {
+					position: relative;
+					&::after {
+						content: '18.04.';
+						position: absolute;
+					    left: 328px;
+					    top: 127px;
+					}
+				}
+				.w-5 {
+					position: relative;
+					&::after {
+						content: '25.04.';
+						position: absolute;
+					    left: 266px;
+					    top: 127px;
+					}
+				}
+				.w-6 {
+					position: relative;
+					&::after {
+						content: '02.05.';
+						position: absolute;
+					    left: 202px;
+					    top: 127px;
+					}
+				}
+				.w-7 {
+					position: relative;
+					&::after {
+						content: '09.05.';
+						position: absolute;
+					    left: 137px;
+					    top: 127px;
+					}
+				}
+				.w-8 {
+					position: relative;
+					&::after {
+						content: '22.05.';
+						position: absolute;
+					    left: 46px;
+					    top: 234px;
+					}
+				}
+				.w-9 {
+					position: relative;
+					&::after {
+						content: '29.05.';
+						position: absolute;
+					    left: 134px;
+					    top: 287px;
+					}
+				}
+				.w-10 {
+					position: relative;
+					&::after {
+						content: '06.06.';
+						position: absolute;
+					    left: 189px;
+					    top: 285px;
+					}
+				}
+				.w-11 {
+					position: relative;
+					&::after {
+						content: '20.06.';
+						position: absolute;
+					    left: 294px;
+					    top: 285px;
+					}
+				}
+				.w-12 {
+					position: relative;
+					&::after {
+						content: '28.06.';
+						position: absolute;
+					    left: 360px;
+					    top: 286px;
+					}
+				}
+				.w-13 {
+					position: relative;
+					&::after {
+						content: '11.07.';
+						position: absolute;
+					    left: 374px;
+					    top: 397px;
+					}
+				}
+
+
 				.block {
 					font-family: OpenSansLight;
 					font-size: 12px;

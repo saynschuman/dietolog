@@ -78,7 +78,7 @@
 
 	$('main.content .time-sc .right .scale .img-wr img').click(function(e){
 		var div = $('main.content .time-sc .right .scale');
-		// var attr = $(this).attr('src');
+		$('main.content .time-sc .right .scale .b-6').addClass('gr');
 		div.find('.no-gr').removeClass('no-gr');
 		$(this).parent().addClass('no-gr');
 		div.find('.b img').attr('src', 'img/el-bl.png');
