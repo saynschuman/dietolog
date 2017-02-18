@@ -89,5 +89,6 @@
 
 	$('main.content .mob-button').click(function(){
 		$('main.content').toggleClass('toggle-header');
+		$('header').toggleClass('opacity');
 	})
 }(jQuery));

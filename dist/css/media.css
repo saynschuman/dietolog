@@ -205,4 +205,6 @@
   footer {
     padding: 40px; }
   main.content ul li {
-    margin: 0; } }
+    margin: 0; }
+  main.content .right .weight span {
+    font-size: 25px; } }
