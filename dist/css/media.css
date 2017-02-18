@@ -207,4 +207,6 @@
   main.content ul li {
     margin: 0; }
   main.content .right .weight span {
-    font-size: 25px; } }
+    font-size: 25px; }
+  main.content .left .data input[type="submit"] {
+    width: 216px !important; } }
