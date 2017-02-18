@@ -730,6 +730,10 @@ button:focus {
   -webkit-filter: grayscale(0) !important;
           filter: grayscale(0) !important; }
 
+.rotate {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg); }
+
 body {
   font-family: OpenSansRegular;
   background-color: #558da8; }
@@ -1256,7 +1260,9 @@ main.content {
         main.content .time-sc .left .datas .l {
           width: 50%;
           float: left;
-          text-align: center; }
+          text-align: center;
+          -webkit-transform-style: preserve-3d;
+                  transform-style: preserve-3d; }
           main.content .time-sc .left .datas .l .cur-height {
             font-size: 13px;
             font-family: OpenSansLight;
@@ -1270,7 +1276,9 @@ main.content {
             display: block;
             margin: 0 auto;
             max-width: 100%;
-            height: auto; }
+            height: auto;
+            -webkit-transition: 1s;
+            transition: 1s; }
         main.content .time-sc .left .datas .r {
           width: 50%;
           float: right;
@@ -1325,6 +1333,42 @@ main.content {
         margin-top: -10px;
         width: 245px;
         margin-bottom: 100px; }
+      main.content .time-sc .right .share {
+        position: absolute;
+        margin-top: 83px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        height: 40px;
+        width: 200px;
+        background-color: #89d040;
+        -webkit-border-radius: 23px;
+                border-radius: 23px;
+        color: #fff;
+        border: none;
+        font-size: 17px;
+        border: 1px solid #89d040;
+        -webkit-transition: .3s;
+        transition: .3s;
+        text-align: left;
+        padding-top: 7px;
+        padding-left: 36px; }
+        main.content .time-sc .right .share img {
+          margin-left: 12px;
+          position: absolute;
+          -webkit-transition: .3s;
+          transition: .3s; }
+        main.content .time-sc .right .share:hover {
+          -webkit-transition: .3s;
+          transition: .3s;
+          text-decoration: none;
+          cursor: pointer; }
+          main.content .time-sc .right .share:hover img {
+            -webkit-transform: rotateY(-180deg);
+                    transform: rotateY(-180deg);
+            -webkit-transition: .3s;
+            transition: .3s; }
       main.content .time-sc .right .scale {
         background-image: url(../img/scale.png);
         width: 460px;

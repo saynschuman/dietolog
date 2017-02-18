@@ -78,13 +78,14 @@
 
 	$('main.content .time-sc .right .scale .img-wr img').click(function(e){
 		var div = $('main.content .time-sc .right .scale');
-		// $(this).addClass('rem');
+		// var attr = $(this).attr('src');
 		div.find('.no-gr').removeClass('no-gr');
 		$(this).parent().addClass('no-gr');
 		div.find('.b img').attr('src', 'img/el-bl.png');
 		div.find('.w img').attr('src', 'img/el-wh.png');
 		$(this).attr('src', 'img/el-act.png');
-		
+		$('main.content .time-sc .left .datas .l img').toggleClass('rotate');
+		console.log(attr);
 		
 		
 				

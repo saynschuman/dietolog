@@ -595,6 +595,7 @@ main.content {
 					width: 50%;
 					float: left;
 					text-align: center;
+					transform-style: preserve-3d;
 					.cur-height {
 						font-size: 13px;
 						font-family: OpenSansLight;
@@ -611,7 +612,9 @@ main.content {
 						display: block;
 						margin: 0 auto;
 						max-width: 100%;
-						height: auto;						
+						height: auto;	
+						transition: 1s;
+						// width: 120px;					
 					}
 				}
 				.r {
@@ -670,6 +673,38 @@ main.content {
     			width: 245px;
     			margin-bottom: 100px;
 			}
+			.share {
+				position: absolute;
+				margin-top: 83px;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 40px;
+				width: 200px;
+				background-color: $green;
+				border-radius: 23px;
+				color: $fontLight;
+				border: none;
+				font-size: 17px;
+				border: 1px solid $green;
+				transition: .3s;
+				text-align: left;
+				padding-top: 7px;
+				padding-left: 36px;
+				img {
+					margin-left: 12px;
+					position: absolute;
+					transition: .3s;
+				}
+				&:hover {
+					transition: .3s;
+					text-decoration: none;
+					cursor: pointer;
+					img {
+						transform: rotateY(-180deg);
+						transition: .3s;
+					}
+				}
+			}			
 			.scale {
 				background-image: url(../img/scale.png);
 				width: 460px;
@@ -836,7 +871,7 @@ main.content {
 					    left: 303px;
 					}																																																																																									
 				}
-			}
+			}			
 		}
 	}
 	.instr {
