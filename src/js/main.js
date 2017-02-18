@@ -84,11 +84,10 @@
 		div.find('.b img').attr('src', 'img/el-bl.png');
 		div.find('.w img').attr('src', 'img/el-wh.png');
 		$(this).attr('src', 'img/el-act.png');
-		$('main.content .time-sc .left .datas .l img').toggleClass('rotate');
-		
-		
-		
-				
+		$('main.content .time-sc .left .datas .l img').toggleClass('rotate');				
 	})
 
+	$('main.content .mob-button').click(function(){
+		$('main.content').toggleClass('toggle-header');
+	})
 }(jQuery));

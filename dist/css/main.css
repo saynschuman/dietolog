@@ -738,16 +738,23 @@ button:focus {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg); }
 
+.toggle-header {
+  -webkit-transform: translateX(267px);
+      -ms-transform: translateX(267px);
+          transform: translateX(267px); }
+
 body {
   font-family: OpenSansRegular;
-  background-color: #558da8; }
+  background-color: #558da8;
+  width: 100%; }
 
 header {
   color: #fff;
-  width: 260px;
+  width: 20%;
   position: fixed;
   overflow-y: auto;
-  height: 100%; }
+  height: 100%;
+  float: left; }
   header::before {
     content: '';
     position: absolute;
@@ -951,11 +958,14 @@ header {
               display: none; }
 
 main.content {
-  margin-left: 260px;
   -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
   height: auto;
-  color: #484848; }
+  color: #484848;
+  width: 80%;
+  float: right; }
+  main.content .mob-button {
+    display: none; }
   main.content .wh {
     background-color: #fff;
     float: left;
@@ -1230,7 +1240,7 @@ main.content {
     margin-top: 46px;
     width: 100%; }
     main.content .time-sc .left {
-      width: 40%;
+      width: 35%;
       float: left;
       padding-bottom: 250px; }
       main.content .time-sc .left .calendar {
@@ -1326,7 +1336,7 @@ main.content {
           -webkit-transition: .3s;
           transition: .3s; }
     main.content .time-sc .right {
-      width: 60%;
+      width: 65%;
       float: right; }
       main.content .time-sc .right pre {
         color: #9c9c9c;
@@ -1381,6 +1391,8 @@ main.content {
         margin: 0 auto;
         background-repeat: no-repeat;
         position: relative; }
+        main.content .time-sc .right .scale .sli {
+          display: none; }
         main.content .time-sc .right .scale .w-1 {
           position: relative; }
           main.content .time-sc .right .scale .w-1::after {
@@ -1751,11 +1763,15 @@ main.content {
         top: -20px;
         color: #89d040; }
 
+aside {
+  float: left; }
+
 footer {
-  margin-left: 260px;
   background-color: #484848;
   padding: 50px 120px;
-  text-align: right; }
+  text-align: right;
+  width: 80%;
+  float: right; }
   footer ul li {
     display: inline-block;
     color: #bcbcbc;

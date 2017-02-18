@@ -8,14 +8,16 @@
 body {
 	font-family: OpenSansRegular;
 	background-color: $blue;
+	width: 100%;
 }
 
 header {
 	color: $fontLight;
-	width: 260px;
+	width: 20%;
 	position: fixed;
     overflow-y: auto;
     height: 100%;	
+    float: left;
 	&::before {
 		content: '';
 		position: absolute;
@@ -250,10 +252,14 @@ header {
 }
 
 main.content {
-	margin-left: 260px;
 	box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
 	height: auto;
 	color: $fontDark;
+	width: 80%;
+	float: right;
+	.mob-button {
+		display: none;
+	}
 	.wh {
 		background-color: $fontLight;
 		float: left;
@@ -556,7 +562,7 @@ main.content {
 		margin-top: 46px;
 		width: 100%;
 		.left {
-			width: 40%;
+			width: 35%;
 			float: left;
 			padding-bottom: 250px;
 			.calendar {
@@ -661,7 +667,7 @@ main.content {
 			}
 		}
 		.right {
-			width: 60%;
+			width: 65%;
 			float: right;
 			pre {
 			    color: #9c9c9c;
@@ -713,6 +719,9 @@ main.content {
 				margin: 0 auto; 
 				background-repeat: no-repeat; 
 				position: relative;
+				.sli {
+					display: none;
+				}
 				.w-1 {
 					position: relative;
 					&::after {
@@ -1163,11 +1172,16 @@ main.content {
 		}
 	}
 }
+aside {
+	// width: 22%;
+	float: left;
+}
 footer {
-	margin-left: 260px;
 	background-color: $fontDark;
 	padding: 50px 120px;
 	text-align: right;
+	width: 80%;
+	float: right;
 	ul {
 		li {
 			display: inline-block;
