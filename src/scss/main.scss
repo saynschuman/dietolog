@@ -18,6 +18,7 @@ header {
     overflow-y: auto;
     height: 100%;	
     float: left;
+    transition:.3s;
 	&::before {
 		content: '';
 		position: absolute;
@@ -257,6 +258,7 @@ main.content {
 	color: $fontDark;
 	width: 80%;
 	float: right;
+	transition: .3s;
 	.mob-button {
 		display: none;
 	}

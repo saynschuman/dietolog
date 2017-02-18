@@ -757,7 +757,9 @@ header {
   position: fixed;
   overflow-y: auto;
   height: 100%;
-  float: left; }
+  float: left;
+  -webkit-transition: .3s;
+  transition: .3s; }
   header::before {
     content: '';
     position: absolute;
@@ -966,7 +968,9 @@ main.content {
   height: auto;
   color: #484848;
   width: 80%;
-  float: right; }
+  float: right;
+  -webkit-transition: .3s;
+  transition: .3s; }
   main.content .mob-button {
     display: none; }
   main.content .wh {
