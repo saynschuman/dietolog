@@ -21,12 +21,13 @@
 	$('input').styler();
 	// end styler
 	$(window).on('load', function(){
-		$( ".ui-slider-handle" ).html( 5 );
+		$( ".ui-slider-handle" ).html( 0 );
+		
 		$('#5').css('opacity', '1');
 	})
        $( ".slider" ).slider({
        			orientation: "vertical",
- 	        	animate: 'fast',
+
               	range: "min",
               	value: 5,
               	min: 0,
@@ -34,33 +35,42 @@
 	        step: 1,
 	//Получаем значение и выводим его на странице
               	slide: function( event, ui ) {
-                  		$( ".ui-slider-handle" ).html( ui.value );
-                  		if (ui.value == 1) { 
-                  			$('.human').css('opacity', '0');
-                  			$('#1').css('opacity', '1');
-                  		}
-                  		if (ui.value == 2) { 
-                  			$('.human').css('opacity', '0');
-                  			$('#2').css('opacity', '1');
-                  		}
-                  		if (ui.value == 3) { 
-                  			$('.human').css('opacity', '0');
-                  			$('#3').css('opacity', '1');
+                  		if (ui.value == 5) { 
+                  			$('#_1').css('opacity', '.9');
+                  			$( ".ui-slider-handle" ).html( '0' );
+                  			$('.inner').css('height', '0');
                   		}
                   		if (ui.value == 4) { 
-                  			$('.human').css('opacity', '0');
-                  			$('#4').css('opacity', '1');
+                  			$('#_1').css('opacity', '.8');
+                  			$( ".ui-slider-handle" ).html( '1' );
+                  			$('.inner').css('height', '20%');
                   		}
-                  		if (ui.value == 5) { 
-                  			$('.human').css('opacity', '0');
-                  			$('#5').css('opacity', '1');
+                  		if (ui.value == 3) { 
+                  			$('#_1').css('opacity', '.6');
+                  			$( ".ui-slider-handle" ).html( '2' );
+                  			$('.inner').css('height', '40%');
+                  		}
+                  		if (ui.value == 2) { 
+                  			$('#_1').css('opacity', '.4');
+                  			$( ".ui-slider-handle" ).html( '3' );
+                  			$('.inner').css('height', '60%');
+                  		}
+                  		if (ui.value == 1) { 
+                  			$('#_1').css('opacity', '.2');
+                  			$( ".ui-slider-handle" ).html( '4' );
+                  			$('.inner').css('height', '80%');
+                  		}
+                  		if (ui.value == 0) { 
+                  			$('#_1').css('opacity', '.0');
+                  			$( ".ui-slider-handle" ).html( '5' );
+                  			$('.inner').css('height', '100%');
                   		}
                   		
               	},
 
 	//Обновляем скрытое поле формы, так что можно передать данные с помощью формы
               	change: function(event, ui) { 
-              		$('#hidden').attr('value', ui.value);
+              		// $('#hidden').attr('value', ui.value);
               	}
 	
 });
