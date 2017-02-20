@@ -1,4 +1,4 @@
 # Dietolog
-##### homepage - https://saynschuman.github.io/dist/index.html
-##### homepage - https://saynschuman.github.io/dist/man.html
+##### female - https://saynschuman.github.io/dist/index.html
+##### male - https://saynschuman.github.io/dist/man.html
 
