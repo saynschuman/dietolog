@@ -1608,11 +1608,12 @@ main.content {
             position: absolute;
             left: 205px;
             top: -106px;
-            background-image: url(../img/girl-thin.png);
-            height: 135px;
+            background-image: url(../img/ww-85.png);
+            height: 112px;
             width: 33px;
             -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%); }
+                    filter: grayscale(100%);
+            background-size: 100%; }
         main.content .time-sc .right .scale .b-2 {
           position: relative; }
           main.content .time-sc .right .scale .b-2::before {
@@ -1620,11 +1621,12 @@ main.content {
             position: absolute;
             left: 385px;
             top: 34px;
-            background-image: url(../img/girl-thin.png);
-            height: 135px;
+            background-image: url(../img/ww-75.png);
+            height: 123px;
             width: 33px;
             -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%); }
+                    filter: grayscale(100%);
+            background-size: 100%; }
         main.content .time-sc .right .scale .b-3 {
           position: relative; }
           main.content .time-sc .right .scale .b-3::before {
@@ -1632,11 +1634,12 @@ main.content {
             position: absolute;
             left: 64px;
             top: 66px;
-            background-image: url(../img/girl-thin.png);
-            height: 135px;
+            background-image: url(../img/ww-70.png);
+            height: 128px;
             width: 33px;
             -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%); }
+                    filter: grayscale(100%);
+            background-size: 100%; }
         main.content .time-sc .right .scale .b-4 {
           position: relative; }
           main.content .time-sc .right .scale .b-4::before {
@@ -1644,11 +1647,12 @@ main.content {
             position: absolute;
             left: 226px;
             top: 150px;
-            background-image: url(../img/girl-thin.png);
+            background-image: url(../img/ww-65.png);
             height: 135px;
             width: 33px;
             -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%); }
+                    filter: grayscale(100%);
+            background-size: 100%; }
         main.content .time-sc .right .scale .b-5 {
           position: relative; }
           main.content .time-sc .right .scale .b-5::before {
@@ -1656,11 +1660,12 @@ main.content {
             position: absolute;
             left: 387px;
             top: 235px;
-            background-image: url(../img/girl-thin.png);
-            height: 135px;
+            background-image: url(../img/ww-60.png);
+            height: 142px;
             width: 33px;
             -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%); }
+                    filter: grayscale(100%);
+            background-size: 100%; }
         main.content .time-sc .right .scale .b-6 {
           position: relative; }
           main.content .time-sc .right .scale .b-6::before {
@@ -1668,9 +1673,10 @@ main.content {
             position: absolute;
             left: 327px;
             top: 260px;
-            background-image: url(../img/girl-thin.png);
-            height: 135px;
-            width: 33px; }
+            background-image: url(../img/ww-55.png);
+            height: 149px;
+            width: 33px;
+            background-size: 100%; }
         main.content .time-sc .right .scale .scale-i {
           position: absolute;
           cursor: pointer; }

@@ -20,9 +20,10 @@
 	//start styler
 	$('input').styler();
 	// end styler
-	$(window).on('load', function(){
-		$( ".ui-slider-handle" ).html( 0 );
-		
+
+
+	$(window).on('load click', function(){
+		$( ".ui-slider-handle" ).html( 0 );		
 		$('#5').css('opacity', '1');
 	})
        $( ".slider" ).slider({
@@ -94,7 +95,25 @@
 		div.find('.b img').attr('src', 'img/el-bl.png');
 		div.find('.w img').attr('src', 'img/el-wh.png');
 		$(this).attr('src', 'img/el-act.png');
-		$('main.content .time-sc .left .datas .l img').toggleClass('rotate');				
+		if($(this).attr('id') == 'b-1' || $(this).attr('id') == 'w-1' || $(this).attr('id') == 'w-2' || $(this).attr('id') == 'w-3') {
+			$('main.content .time-sc .left .datas .l img').attr('src', 'img/ww-85.png');
+		}
+		if($(this).attr('id') == 'b-2' || $(this).attr('id') == 'w-4' || $(this).attr('id') == 'w-5' || $(this).attr('id') == 'w-6' || $(this).attr('id') == 'w-7') {
+			$('main.content .time-sc .left .datas .l img').attr('src', 'img/ww-75.png');
+		}
+		if($(this).attr('id') == 'b-3' || $(this).attr('id') == 'w-8' || $(this).attr('id') == 'w-9' || $(this).attr('id') == 'w-10') {
+			$('main.content .time-sc .left .datas .l img').attr('src', 'img/ww-70.png');
+		}
+		if($(this).attr('id') == 'b-4' || $(this).attr('id') == 'w-11' || $(this).attr('id') == 'w-12') {
+			$('main.content .time-sc .left .datas .l img').attr('src', 'img/ww-65.png');
+		}
+		if($(this).attr('id') == 'b-5'  || $(this).attr('id') == 'w-13') {
+			$('main.content .time-sc .left .datas .l img').attr('src', 'img/ww-60.png');
+		}
+		if($(this).attr('id') == 'b-6') {
+			$('main.content .time-sc .left .datas .l img').attr('src', 'img/ww-55.png');
+		}
+		
 	})
 
 	$('main.content .mob-button').click(function(){
