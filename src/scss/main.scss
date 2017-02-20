@@ -1056,7 +1056,44 @@ main.content {
 					    // filter: grayscale(100%);
 					    background-size: 100%; 
 				    }					
-				}																				
+				}
+				.m-1 {
+					&::before {
+						background-image: url(../img/mm-85.png);	
+						height: 140px;
+					}
+				}	
+				.m-2 {
+					&::before {
+						background-image: url(../img/mm-75.png);	
+						height: 152px;
+					}
+				}	
+				.m-3 {
+					&::before {
+						background-image: url(../img/mm-70.png);	
+						height: 159px;
+					}
+				}	
+				.m-4 {
+					&::before {
+						background-image: url(../img/mm-65.png);	
+						height: 161px;
+					}
+
+				}	
+				.m-5 {
+					&::before {
+						background-image: url(../img/mm-60.png);	
+						height: 161px;
+					}
+				}	
+				.m-6 {
+					&::before {
+						background-image: url(../img/mm-55.png);	
+						height: 161px;
+					}
+				}															
 				.scale-i {
 					position: absolute;
 					cursor: pointer;

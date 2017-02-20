@@ -1677,6 +1677,24 @@ main.content {
             height: 149px;
             width: 33px;
             background-size: 100%; }
+        main.content .time-sc .right .scale .m-1::before {
+          background-image: url(../img/mm-85.png);
+          height: 140px; }
+        main.content .time-sc .right .scale .m-2::before {
+          background-image: url(../img/mm-75.png);
+          height: 152px; }
+        main.content .time-sc .right .scale .m-3::before {
+          background-image: url(../img/mm-70.png);
+          height: 159px; }
+        main.content .time-sc .right .scale .m-4::before {
+          background-image: url(../img/mm-65.png);
+          height: 161px; }
+        main.content .time-sc .right .scale .m-5::before {
+          background-image: url(../img/mm-60.png);
+          height: 161px; }
+        main.content .time-sc .right .scale .m-6::before {
+          background-image: url(../img/mm-55.png);
+          height: 161px; }
         main.content .time-sc .right .scale .scale-i {
           position: absolute;
           cursor: pointer; }
