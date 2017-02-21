@@ -1848,7 +1848,7 @@ footer {
   background-attachment: fixed;
   min-height: 545px; }
   .login#register {
-    height: 750px; }
+    min-height: 750px; }
   .login form {
     width: 100%;
     max-width: 1047px;
