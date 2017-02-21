@@ -91,4 +91,95 @@
 		$('main.content').toggleClass('toggle-header');
 		$('header').toggleClass('opacity');
 	})
+
+// validation
+
+  $("#request-popup").validate({
+    rules:{
+      name:{
+        required: true,
+        minlength: 2
+      },
+      password:{
+        required: true,
+        minlength: 5
+      },
+      'second-name': {
+        required: true,
+        minlength: 2
+      },
+      login: {
+        required: true,
+        minlength: 2
+      },
+      wmr: {
+        required: true,
+        minlength: 2  
+      },
+      email:{
+        required: true
+      },
+      'password-again': {
+        equalTo: "#password"
+      }
+    },
+    messages:{
+      name:{
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Введите, как минимум, два символа")
+      },
+      'second-name': {
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Введите, как минимум, два символа")
+      },
+      login:{
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Введите, как минимум, два символа")
+      },
+      email: {
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Введите, как минимум, два символа"),
+        email: 'Email должен содержать символ "@" а также имя доменной зоны'
+      },
+      wmr: {
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Введите, как минимум, два символа")
+      },            
+      password:{
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Пароль должен содержать не менее 5-ти символов")
+      },
+      'password-again': {
+        equalTo: "Пароли не совпадают"
+      }     
+      }           
+        
+  });
+
+  $("#enter-popup").validate({
+    rules:{
+      login:{
+        required: true,
+        minlength: 2
+      },
+      password:{
+        required: true,
+        minlength: 5
+      }
+    },
+    messages:{
+      login:{
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Введите, как минимум, два символа")
+      },
+      password:{
+        required: "Это поле обязательно для заполнения",
+        minlength: jQuery.validator.format("Хм.. с таким коротким паролем тебя быстро взломают")
+      }
+      }           
+        
+  });
+
+
+  
 }(jQuery));

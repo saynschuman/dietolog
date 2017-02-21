@@ -137,6 +137,29 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	.login .right-align .top-nav {
+		display: block;
+		ul {
+			    display: block;
+    margin: 0 auto;
+    width: 193px;
+    position: absolute;
+    left: 50%;
+    top: 11px;
+    transform: translateX(-50%);
+		}
+		li {
+			float: none;
+			margin: 10px 15px;
+			background: transparent;
+			border-radius: 45px;
+			border: 1px solid #fff;
+			transition: .3s;
+			display: contents;
+			text-align: center;
+		}		
+	}
+
 	main.content .time-sc .right .scale .block {
 		background-color: transparent;
 		&::after {

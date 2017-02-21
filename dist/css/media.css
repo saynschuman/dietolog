@@ -110,6 +110,29 @@
     margin-top: 7px; } }
 
 @media screen and (max-width: 768px) {
+  .login .right-align .top-nav {
+    display: block; }
+    .login .right-align .top-nav ul {
+      display: block;
+      margin: 0 auto;
+      width: 193px;
+      position: absolute;
+      left: 50%;
+      top: 11px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .login .right-align .top-nav li {
+      float: none;
+      margin: 10px 15px;
+      background: transparent;
+      -webkit-border-radius: 45px;
+              border-radius: 45px;
+      border: 1px solid #fff;
+      -webkit-transition: .3s;
+      transition: .3s;
+      display: contents;
+      text-align: center; }
   main.content .time-sc .right .scale .block {
     background-color: transparent; }
     main.content .time-sc .right .scale .block::after {

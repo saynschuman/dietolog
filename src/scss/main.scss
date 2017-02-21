@@ -1270,3 +1270,130 @@ footer {
 		}
 	}
 }
+
+.login {
+	width: 100%;
+	height: 811px;
+	background-image: url(../img/back.jpg); 
+	z-index: 9;
+    position: absolute;
+    background-position: cover;
+    background-attachment: fixed;
+    form {
+    	width: 100%;
+    	max-width: 1047px;
+    	height: auto;
+    	background-image: url(../img/fitness.jpg); 
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	top: 122px;
+    	margin: auto;
+    	padding-top: 97px;
+    	padding-bottom: 50px;
+    	h2 {
+    		text-align: center;
+    		font-size: 21px;
+    		font-family: OpenSansSemibold;
+    		margin-bottom: 25px;
+    	}
+    	input {
+		    display: block;
+		    margin: 0 auto;
+		    margin-top: 2.5px;
+		    margin-bottom: 2.5px;
+		    border-radius: 30px;
+		    border: 1px solid #bababa;
+		    padding: 8px 25px;
+		    font-size: 15px;
+		    color: $fontDark;
+		    width: 100%;
+		    max-width: 300px;   
+		    margin-bottom: 15px;
+		    &[type="submit"] {
+		        background-color: $green;
+			    font-size: 17px;
+			    color: #fff;
+			    cursor: pointer;
+			    transition: .3s;
+			    border: 1px solid $green;
+			    &:hover {
+			    	background-color: transparent;
+			    	transition: .3s;
+			    	color: $green;
+			    }
+		    }
+    	}
+    	.forgot {
+    		font-size: 12px;
+		    color: $fontDark;
+		    text-align: right;
+		    display: block;
+		    margin: 0 auto;
+		    width: 100%;
+		    max-width: 300px;
+		    cursor: pointer;
+		    margin-top: -12px;
+    		margin-bottom: 6px;
+    	}
+    	label.error {
+		    font-size: 12px;
+		    color: red;
+		    text-align: left;
+		    padding-left: 10px;
+		    display: block;
+		    margin-top: -10px;
+		    margin: 0 auto;
+		    width: 100%;
+		    max-width: 300px;
+		    cursor: pointer;
+		    margin-bottom: 6px;  
+    	}
+    	input.error {
+    		margin-bottom: 0;
+    		border: 1px solid red;
+    		background-color: rgba(255, 0, 0, .07); 
+    		color: red;
+    	}
+    }
+    	.right-align {
+    		float: right;
+    		.top-nav {
+				float: left;
+				margin-top: 17px;
+				li {
+				    float: left;
+				    margin: 25px 15px;
+				    background: transparent;
+				    border-radius: 45px;
+				    border: 1px solid #fff;
+				    transition: .3s;
+				    &:hover {
+				    	background-color: $green;
+				    	border: 1px solid $green;
+				    	transition: .3s;				    	
+				    }	
+				    &.active {
+				    	background-color: $green;
+				    	border: 1px solid $green;
+				    	transition: .3s;
+				    	&:hover {
+				    		background-color: transparent;
+				    		border: 1px solid #fff;
+				    	}
+				    }					    
+				    a {
+					    display: block;
+					    text-decoration: none;
+					    color: #fff;
+					    font-size: 15px;
+					    position: relative;
+					    transition: all .3s;
+					    overflow: hidden;
+					    padding: 4px 42px 7px;
+					    color: #fff;		    	
+				    }				
+				}
+			}
+    	}    
+}
