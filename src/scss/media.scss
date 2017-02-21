@@ -140,13 +140,14 @@
 	.login .right-align .top-nav {
 		display: block;
 		ul {
-			    display: block;
-    margin: 0 auto;
-    width: 193px;
-    position: absolute;
-    left: 50%;
-    top: 11px;
-    transform: translateX(-50%);
+			display: block;
+		    margin: 0 auto;
+		    width: 193px;
+		    position: absolute;
+		    left: 50%;
+		    top: 11px;
+		    transform: translateX(-50%);
+		    z-index: 9999;
 		}
 		li {
 			float: none;

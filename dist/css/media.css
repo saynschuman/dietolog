@@ -121,7 +121,8 @@
       top: 11px;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
+              transform: translateX(-50%);
+      z-index: 9999; }
     .login .right-align .top-nav li {
       float: none;
       margin: 10px 15px;
