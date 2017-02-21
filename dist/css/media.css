@@ -1,7 +1,3 @@
-@media screen and (max-width: 1400px) {
-  .login {
-    background-size: 100%; } }
-
 @media screen and (max-width: 1340px) {
   header {
     width: 18%; }
