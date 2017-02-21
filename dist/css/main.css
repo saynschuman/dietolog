@@ -1844,7 +1844,7 @@ footer {
   background-image: url(../img/back.jpg);
   z-index: 9;
   position: absolute;
-  background-position: cover;
+  background-size: cover;
   background-attachment: fixed;
   min-height: 545px; }
   .login#register {
